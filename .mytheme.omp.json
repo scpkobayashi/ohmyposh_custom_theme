@@ -34,8 +34,8 @@
           "powerline_symbol": "",
           "foreground": "#100e23",
           "background": "#906cff",
-          "template": "  {{ .Full }} "
-        }
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Venv }}{{ end }} "
+        },
         {
           "type": "git",
           "style": "powerline",
